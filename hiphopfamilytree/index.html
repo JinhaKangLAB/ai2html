@@ -623,6 +623,14 @@ function onResizeFunction (e){
 			};
 		}
 	})("g-Hip-hop-Family-Tree-Animated-box", {namespace: "g-", setup: window.setupInteractive || window.getComponent});
+	function sendHeight() {
+    const height = document.body.scrollHeight;
+    window.parent.postMessage({ id: "embed-1", height }, "*");
+}
+
+window.addEventListener("load", sendHeight);
+window.addEventListener("resize", sendHeight);
+new ResizeObserver(sendHeight).observe(document.body);
 </script>
 </div>
 </body>
