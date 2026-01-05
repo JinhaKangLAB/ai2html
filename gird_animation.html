@@ -1,0 +1,151 @@
+<div id="animation-wrapper" style="height: 100vh; background:#f8f8f8; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+  <div style="
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  ">
+
+    <div style="margin-bottom:20px; position:relative; height:40px; width:40px;">
+      <svg id="icon-desktop" style="position:absolute; opacity:1; transition: opacity 0.5s;" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2">
+        <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+        <line x1="8" y1="21" x2="16" y2="21"></line>
+        <line x1="12" y1="17" x2="12" y2="21"></line>
+      </svg>
+      <svg id="icon-tablet" style="position:absolute; opacity:0; transition: opacity 0.5s;" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2">
+        <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+      </svg>
+      <svg id="icon-mobile" style="position:absolute; opacity:0; transition: opacity 0.5s;" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2">
+        <rect x="5" y="2" width="14" height="20" rx="2"></rect>
+      </svg>
+    </div>
+
+    <div
+      id="scaling-container"
+      style="
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        overflow:visible;
+        transition: transform 0.2s ease-in-out;
+      "
+    >
+      <div
+        id="device-frame"
+        style="
+          background:#000;
+          padding:12px;
+          border-radius:18px;
+          box-shadow:0 18px 40px rgba(0,0,0,0.25);
+          box-sizing:border-box;
+          transition: all 0.2s ease-in-out;
+        "
+      >
+        <div
+          id="screen-mat"
+          style="
+            background:#fff;
+            padding:10px;
+            border-radius:12px;
+            box-sizing:border-box;
+            transition: all 0.2s ease-in-out;
+          "
+        >
+          <iframe
+            id="dynamic-iframe"
+            src="https://jinhakanglab.github.io/ai2html/hiphopfamilytree/index.html"
+            scrolling="no"
+            style="
+              width:900px;
+              height:740px;
+              border:none;
+              border-radius:8px;
+              background:white;
+              pointer-events:none;
+              display:block;
+              transition: all 0.2s ease-in-out;
+            "
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <p id="mode-label" style="margin-top:20px;font-family:sans-serif;color:#aaa;font-size:11px;letter-spacing:2px;text-transform:uppercase;">
+      Desktop View
+    </p>
+  </div>
+</div>
+
+<script>
+  const iframe = document.getElementById("dynamic-iframe");
+  const scaler = document.getElementById("scaling-container");
+  const frame = document.getElementById("device-frame");
+  const mat = document.getElementById("screen-mat");
+  const label = document.getElementById("mode-label");
+
+  const icons = {
+    mobile: document.getElementById("icon-mobile"),
+    tablet: document.getElementById("icon-tablet"),
+    desktop: document.getElementById("icon-desktop"),
+  };
+
+  const MODES = {
+    desktop: { width: 900, height: 740, bezel: 12, radius: 18 },
+    tablet:  { width: 520, height: 720, bezel: 16, radius: 26 },
+    mobile:  { width: 320, height: 480, bezel: 14, radius: 28 },
+  };
+
+  // Reversed order: PC -> Tablet -> Mobile
+  const modeOrder = ["desktop", "tablet", "mobile"];
+  let currentIndex = 0;
+
+  function setMode(mode) {
+    const { width, height, bezel, radius } = MODES[mode];
+
+    // Update Dimensions
+    iframe.style.width = width + "px";
+    iframe.style.height = height + "px";
+    
+    frame.style.padding = bezel + "px";
+    frame.style.borderRadius = radius + "px";
+
+    mat.style.padding = mode === "desktop" ? "10px" : "8px";
+    mat.style.borderRadius = Math.max(radius - 10, 12) + "px";
+    iframe.style.borderRadius = Math.max(radius - 16, 8) + "px";
+
+    // Update Label
+    label.innerText = mode + " View";
+
+    // Update Icons
+    Object.keys(icons).forEach(k => {
+      icons[k].style.opacity = k === mode ? 1 : 0;
+    });
+
+    // Responsive Scaling Logic
+    const totalWidth = width + (bezel * 2) + 40; 
+    const totalHeight = height + (bezel * 2) + 200;
+    const scaleW = window.innerWidth / totalWidth;
+    const scaleH = window.innerHeight / totalHeight;
+    const finalScale = Math.min(1, scaleW, scaleH);
+    
+    scaler.style.transform = `scale(${finalScale})`;
+
+    // Notify iframe of resize
+    try {
+      iframe.contentWindow.postMessage("resize", "*");
+    } catch (e) {}
+  }
+
+  function startAutoCycle() {
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % modeOrder.length;
+      setMode(modeOrder[currentIndex]);
+    }, 3000); 
+  }
+
+  // Initial setup: Start with Desktop
+  window.addEventListener("resize", () => setMode(modeOrder[currentIndex]));
+  setMode("desktop");
+  startAutoCycle();
+</script>
