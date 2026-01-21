@@ -1,0 +1,53 @@
+https://i.dailymail.co.uk/i/html_modules/2026/01_JAN/260121_GreatPyramid/index.html
+
+<style type="text/css" media="screen,print">
+	*[id^="ropes"] {
+  stroke-dasharray:150;
+  stroke-dashoffset:150;
+  transform-box: fill-box;
+  transform-origin: left;
+  animation: lines 3s linear forwards infinite;
+}
+  @keyframes lines {
+    90% {
+      opacity: 1;
+    stroke-dashoffset: 0;
+  }
+  100% {
+    opacity: 0;
+    stroke-dashoffset: 0;
+  }
+}
+
+	*[id^="cart1"] {
+  stroke-dasharray:15;
+  stroke-dashoffset:60;
+  transform-box: fill-box;
+  transform-origin: left;
+  animation: lines 6s linear forwards infinite;
+}
+  @keyframes lines {
+    90% {
+      opacity: 1;
+    stroke-dashoffset: 0;
+  }
+  100% {
+    opacity: 0;
+    stroke-dashoffset: 0;
+  }
+}
+
+*[id^="arrow"] {
+  transform: scale(0);
+  transform-box: fill-box;
+  transform-origin: top;
+  animation: vbars ease 3s forwards infinite;
+}
+  @keyframes vbars {
+    0% {
+    transform: scaleY(0);
+    }
+    100% {
+    transform: scaleY(1);
+	}
+}
