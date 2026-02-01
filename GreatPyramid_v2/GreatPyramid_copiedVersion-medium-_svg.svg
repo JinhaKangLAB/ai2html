@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="g-GreatPyramid_copiedVersion-medium-_svg-img" xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" version="1.2" viewBox="0 0 392 895.536">
+  <!-- Generator: Adobe Illustrator 29.4.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 152)  -->
+  <g id="arrow">
+    <g>
+      <line x1="155.506" y1="856.416" x2="155.506" y2="783.638" fill="none" stroke="#f42149" stroke-width=".5"/>
+      <polygon points="157.999 855.686 155.506 860.004 153.013 855.686 157.999 855.686" fill="#f42149"/>
+    </g>
+    <g>
+      <line x1="169.394" y1="856.416" x2="169.394" y2="790.507" fill="none" stroke="#f42149" stroke-dasharray="1 1" stroke-width=".5"/>
+      <polygon points="171.887 855.686 169.394 860.004 166.901 855.686 171.887 855.686" fill="#f42149"/>
+    </g>
+    <g>
+      <line x1="197.469" y1="856.416" x2="197.469" y2="804.283" fill="none" stroke="#f42149" stroke-dasharray="1 1" stroke-width=".5"/>
+      <polygon points="199.962 855.686 197.469 860.004 194.976 855.686 199.962 855.686" fill="#f42149"/>
+    </g>
+    <g>
+      <line x1="225.395" y1="856.416" x2="225.395" y2="818.582" fill="none" stroke="#f42149" stroke-dasharray="1 1" stroke-width=".5"/>
+      <polygon points="227.888 855.686 225.395 860.004 222.902 855.686 227.888 855.686" fill="#f42149"/>
+    </g>
+    <g>
+      <line x1="253.656" y1="856.416" x2="253.656" y2="833.515" fill="none" stroke="#f42149" stroke-dasharray="1 1" stroke-width=".5"/>
+      <polygon points="256.149 855.686 253.656 860.004 251.163 855.686 256.149 855.686" fill="#f42149"/>
+    </g>
+    <g>
+      <line x1="183.282" y1="856.416" x2="183.282" y2="797.526" fill="none" stroke="#f42149" stroke-width=".5"/>
+      <polygon points="185.775 855.686 183.283 860.004 180.789 855.686 185.775 855.686" fill="#f42149"/>
+    </g>
+    <g>
+      <line x1="211.656" y1="856.416" x2="211.656" y2="811.414" fill="none" stroke="#f42149" stroke-width=".5"/>
+      <polygon points="214.149 855.686 211.656 860.004 209.163 855.686 214.149 855.686" fill="#f42149"/>
+    </g>
+    <g>
+      <line x1="239.283" y1="856.416" x2="239.283" y2="827.243" fill="none" stroke="#f42149" stroke-width=".5"/>
+      <polygon points="241.776 855.686 239.283 860.004 236.79 855.686 241.776 855.686" fill="#f42149"/>
+    </g>
+    <g>
+      <line x1="266.835" y1="856.789" x2="266.835" y2="840.609" fill="none" stroke="#f42149" stroke-width=".5"/>
+      <polygon points="269.328 856.06 266.835 860.377 264.342 856.06 269.328 856.06" fill="#f42149"/>
+    </g>
+    <g>
+      <line x1="280.835" y1="856.789" x2="280.835" y2="846.731" fill="none" stroke="#f42149" stroke-width=".5"/>
+      <polygon points="283.328 856.06 280.835 860.377 278.342 856.06 283.328 856.06" fill="#f42149"/>
+    </g>
+  </g>
+  <g id="cart1">
+    <line x1="204.786" y1="717.064" x2="321.267" y2="775.305" fill="none" stroke="#595959" stroke-dasharray="10 50" stroke-miterlimit="10" stroke-width="6"/>
+    <line x1="204.786" y1="717.064" x2="321.267" y2="775.305" fill="none" stroke="#d1d1d1" stroke-dasharray="10 50" stroke-miterlimit="10" stroke-width="5"/>
+  </g>
+  <g id="cart11" data-name="cart1">
+    <line x1="51.164" y1="571.52" x2="205.053" y2="648.689" fill="none" stroke="#595959" stroke-dasharray="10 50" stroke-miterlimit="10" stroke-width="6"/>
+    <line x1="51.164" y1="571.52" x2="205.053" y2="648.689" fill="none" stroke="#d1d1d1" stroke-dasharray="10 50" stroke-miterlimit="10" stroke-width="5"/>
+  </g>
+  <g id="cart12" data-name="cart1">
+    <line x1="48.163" y1="569.996" x2="49.091" y2="784.235" fill="none" stroke="#595959" stroke-dasharray="10 50" stroke-miterlimit="10" stroke-width="6"/>
+    <line x1="48.163" y1="569.996" x2="49.091" y2="784.235" fill="none" stroke="#d1d1d1" stroke-dasharray="10 50" stroke-miterlimit="10" stroke-width="5"/>
+  </g>
+  <g id="cart13" data-name="cart1">
+    <line x1="79.908" y1="660.586" x2="80.689" y2="784.235" fill="none" stroke="#595959" stroke-dasharray="10 50" stroke-miterlimit="10" stroke-width="6"/>
+    <line x1="79.908" y1="660.586" x2="80.689" y2="784.235" fill="none" stroke="#d1d1d1" stroke-dasharray="10 50" stroke-miterlimit="10" stroke-width="5"/>
+  </g>
+  <path id="ropes" d="M272.458,158.989v-63.899,1.493s-.481-3.643,3.509-3.509,3.509,5.451,3.509,5.451v60.464" fill="none" stroke="red" stroke-miterlimit="10"/>
+  <path id="ropes1" data-name="ropes" d="M268.445,158.989c.014-1.269.537-62.406.537-62.406,0,0-.289-3.867-4.046-3.509s-3.509,3.509-3.509,3.509c0,0-.436,2.879,3.785,3.773,5.133,1.088,28.169,13.867,28.135,13.848" fill="none" stroke="red" stroke-miterlimit="10"/>
+  <path id="ropes2" data-name="ropes" d="M364.791,131.959l-74.089-37.968s-7.112-4.933-8.008,4.534,0,60.464,0,60.464" fill="none" stroke="red" stroke-miterlimit="10"/>
+</svg>
