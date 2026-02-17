@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="g-PorterAveRoundabout-small-_svg-img" xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" version="1.2" viewBox="0 0 320 370.022">
+  <!-- Generator: Adobe Illustrator 29.4.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 152)  -->
+  <g id="arrow">
+    <path d="M154.872,48.962s14.968,8.426,17.649,9.957,30.176,17.904,30.176,17.904c0,0-11.824-7.085-23.027-5.936s-16.66,2.777-21.064,3.255-16.66-.766-18.862-2.011" fill="none" stroke="#f42149" stroke-miterlimit="10" stroke-width="3"/>
+    <polygon points="157.786 47.092 148.719 45.521 154.827 52.403 157.786 47.092" fill="#f42149"/>
+    <polygon points="141.784 69.59 132.658 70.768 140.526 75.539 141.784 69.59" fill="#f42149"/>
+  </g>
+  <path id="route" d="M179.824,345.696s-2.068-1.33-2.387-2.351-2.681-4.404-2.681-4.404c0,0-5.574-9.083-6.638-11.745-.894-2.234-1.532-5.106-1.596-6.255s-.255-6.319-.255-6.319l-.128-4.66v-1.149l-44.617-8.234" fill="none" stroke="#f42149" stroke-miterlimit="10"/>
+</svg>
