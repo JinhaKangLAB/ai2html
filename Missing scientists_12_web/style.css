@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	font-family: "Canva Sans Variable";
+	box-sizing: border-box;
+}
+
+html {
+	overflow: hidden;
+}
+
+#graphic {
+	width: 100%;
+	display: block;
+}
+
+.nodes circle {
+	cursor: pointer;
+}
+
+.nodes text {
+	cursor: pointer;
+}
+
+.node-container:focus {
+	outline: none;
+}
+
+#graphic.chart-type-radial
+	.node-container:focus-visible
+	.node-label[visibility="visible"] {
+	outline: #4d90fe auto 0.8rem;
+	outline-offset: 0.6rem;
+}
+
+#graphic.chart-type-regular
+	.node-container:focus-visible
+	.node-label-container {
+	outline: #4d90fe auto 0.8rem;
+	outline-offset: 0.3rem;
+}
+
+.flourish-popup {
+	pointer-events: none;
+}
+
+.flourish-popup .flourish-popup-content {
+	max-width: 400px;
+}
+
+.flourish-popup .flourish-popup-content img {
+	max-width: 100%;
+}
+
+.flourish-popup .flourish-popup-content img[src=""] {
+	display: none;
+}
