@@ -18,7 +18,7 @@ Alternative method: iframe embed
 
 You can also embed via a simple iframe (this is best if your CMS blocks scripts):
 
-    <iframe scrolling="no" src="{{URL}}" data-id="visualisation/28638692" class="flourish-embed-iframe" title='Interactive or visual content' frameborder='0' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
+    <iframe scrolling="no" src="{{URL}}" data-id="visualisation/29206633" class="flourish-embed-iframe" title='Interactive or visual content' frameborder='0' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
 
 Be sure to specify scrolling="no" to avoid problems on iOS.
 
